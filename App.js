@@ -2,48 +2,48 @@ import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, Button, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons'; 
+import { Entypo } from '@expo/vector-icons';
 import Constants from "expo-constants";
-import { MaterialIcons } from '@expo/vector-icons'; 
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function App() {
   return (
     <ScrollView style={styles.container}>
 
       <View style={styles.headers}>
-      <AntDesign style={styles.leftarrow} name="arrowleft" size={24} color="black" />
-      <Entypo style={styles.doticon} name="dots-two-vertical" size={24} color="black" />
+        <AntDesign style={styles.leftarrow} name="arrowleft" size={24} color="black" />
+        <Entypo style={styles.doticon} name="dots-two-vertical" size={24} color="black" />
       </View>
-      
+
       <View style={styles.information}>
         <View>
           <Image style={styles.avatar} source={require('./assets/5.jpg')} />
         </View>
         <View style={styles.subinfo}>
-          <Text style={{fontSize: 20, fontWeight: "bold"}}>Name</Text>
-          <Text style={{fontSize: 15}}>Job</Text>
+          <Text style={{ fontSize: 20, fontWeight: "bold" }}>Name</Text>
+          <Text style={{ fontSize: 15 }}>Job</Text>
           <View style={styles.button}>
             <TouchableOpacity style={styles.designbutton}>
               <Text style={styles.buttonA}>Follow</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-            <MaterialIcons name="send" size={20} color="black" style={styles.buttonB} />
+              <MaterialIcons name="send" size={20} color="black" style={styles.buttonB} />
             </TouchableOpacity>
           </View>
         </View>
-
       </View>
+
       <View style={styles.statistics}>
         <View>
-          <Text style={{fontSize: 20, fontWeight: "bold"}}>210</Text>
+          <Text style={{ fontSize: 20, fontWeight: "bold" }}>210</Text>
           <Text>Photos</Text>
         </View>
         <View>
-          <Text style={{fontSize: 20, fontWeight: "bold"}}>15K</Text>
+          <Text style={{ fontSize: 20, fontWeight: "bold" }}>15K</Text>
           <Text>Followers</Text>
         </View>
         <View>
-          <Text style={{fontSize: 20, fontWeight: "bold"}}>605</Text>
+          <Text style={{ fontSize: 20, fontWeight: "bold" }}>605</Text>
           <Text>Folowing</Text>
         </View>
       </View>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 100,
     height: 100,
-    borderRadius: 100/2,
+    borderRadius: 100 / 2,
     marginRight: 40,
   },
   subinfo: {
@@ -111,16 +111,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 10,
   },
-  designbutton:{
+  designbutton: {
     marginRight: 50
   },
   buttonA: {
-    height:40,
-    width:"150%",
-    backgroundColor:"white",
-    borderRadius:15,
-    padding:10,
-    elevation:10,
+    height: 40,
+    width: "150%",
+    backgroundColor: "white",
+    borderRadius: 15,
+    padding: 10,
+    elevation: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.5,
@@ -128,12 +128,12 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   buttonB: {
-    height:40,
-    width:"120%",
-    backgroundColor:"white",
-    borderRadius:15,
-    padding:10,
-    elevation:10,
+    height: 40,
+    width: "120%",
+    backgroundColor: "white",
+    borderRadius: 15,
+    padding: 10,
+    elevation: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.5,
